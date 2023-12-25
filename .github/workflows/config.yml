@@ -1,0 +1,27 @@
+name: Validate Config
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  validate_config:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install configparser
+
+    - name: Validate config.ini
+      run: python validate_config.py
