@@ -25,4 +25,4 @@ jobs:
         pip install configparser
 
     - name: Validate config.ini
-      run: python validate_config.py
+      run: python examples/validate_config.py
