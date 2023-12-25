@@ -20,3 +20,4 @@ venv/
 docs/build/
 
 examples/*.ini
+.github/action/*.py
