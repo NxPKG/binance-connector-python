@@ -29,6 +29,4 @@ jobs:
         echo -e "[keys]\napi_key=${{ secrets.API_KEY }}\napi_secret=${{ secrets.API_SECRET }}" > examples/config.ini
 
     - name: Validate config.ini
-      run: |
-        chmod +x .github/action/validate_config.py
-        python .github/action/validate_config.py
+      run: python .github/action/validate_config.py
