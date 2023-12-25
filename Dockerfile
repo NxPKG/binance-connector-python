@@ -1,4 +1,4 @@
-FROM docker.io/linux/ubuntu:latest
+FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 WORKDIR /usr/src/app
