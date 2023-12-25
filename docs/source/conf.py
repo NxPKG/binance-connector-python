@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.abspath("../.."))
 project = "binance-connector"
 copyright = "2023, binance"
 author = "nxpkg"
-html_baseurl = 'https://www.nxpkg.github.io/binance-connector-python/'
+
 
 # -- General configuration ---------------------------------------------------
 
